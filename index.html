@@ -6,33 +6,89 @@
     <title>Must-have Accessory</title>
   </head>
   <body>
-    <header><h1>Must-have Accessory Challenge</h1></header>
-    <main></main>
-    <footer>
-      <div class="footer">
-        <small
-          >Page coded by
-          <a
-            href="https://www.shecodes.io/graduates/97811-rebecca-upton"
-            target="_blank"
-            rel="noreferrer"
-            >Rebecca Upton</a
-          >. It is
-          <a href="https://github.com/reb84/sc-challenge-accessory" target="_blank" rel="noreferrer"
-            >open-sourced</a
-          >
-          and hosted on
-          <a href="https://sc-challenge-accessory.vercel.app/" target="_blank" rel="noreferrer"
-            >Vercel</a
-          >.</small
-        >
-      </div>
-    </footer>
-  </body>
+    <div class="container">
+      <header>
+        <h1>Headphones on.<br />World off.</h1>
+        <a href="#about">about</a>
+      </header>
+      <main>
+        <section class="middle">
+          <a name="about"></a>
+          <h2>info about headphones</h2>
+        </section>
+      </main>
 
+      <footer>
+        <section class="footer">
+          <div class="footer">
+            <small
+              >©
+              <a
+                href="https://www.shecodes.io/graduates/97811-rebecca-upton"
+                target="_blank"
+                rel="noreferrer"
+                >Rebecca Upton</a
+              >. Project is
+              <a
+                href="https://github.com/reb84/sc-challenge-accessory"
+                target="_blank"
+                rel="noreferrer"
+                >open-sourced</a
+              >
+              and hosted on
+              <a href="https://sc-challenge-accessory.vercel.app/" target="_blank" rel="noreferrer"
+                >Vercel</a
+              >.</small
+            >
+          </div>
+        </section>
+      </footer>
+    </div>
+  </body>
   <style>
     body {
-      background-color: bisque;
+      background-color: #eae1f6;
+      margin: 0 auto;
+    }
+
+    .container {
+      margin: 0 auto;
+      max-width: 100%;
+    }
+
+    section {
+      margin: 0 auto;
+      max-width: 900px;
+      padding: 10px;
+    }
+
+    /* HEADER */
+    header {
+      color: #a14867;
+      padding: 150px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 80px;
+      font-weight: 800;
+      line-height: 1.5;
+      margin: 30px 0 0 0;
+      text-transform: uppercase;
+    }
+
+    /* MIDDLE */
+    main {
+      background-color: white;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+    }
+
+    footer a {
+      text-decoration: none;
     }
   </style>
 </html>
