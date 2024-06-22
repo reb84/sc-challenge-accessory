@@ -53,6 +53,49 @@
             <span class="source">― Lynn Painter, <em>Better Than the Movies</em></span>
           </p>
         </div>
+
+        <div class="music">
+          <h3>Good music for headphones</h3>
+
+          <div class="grid grid-3-columns">
+            <div class="music-body">
+              <iframe
+                style="border-radius: 12px"
+                src="https://open.spotify.com/embed/track/2dLLR6qlu5UJ5gk0dKz0h3?utm_source=generator"
+                width="100%"
+                height="152"
+                frameborder="0"
+                allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"
+              ></iframe>
+            </div>
+            <div class="music-body">
+              <iframe
+                style="border-radius: 12px"
+                src="https://open.spotify.com/embed/track/5ChkMS8OtdzJeqyybCc9R5?utm_source=generator&theme=0"
+                width="100%"
+                height="152"
+                frameborder="0"
+                allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"
+              ></iframe>
+            </div>
+            <div class="music-body">
+              <iframe
+                style="border-radius: 12px"
+                src="https://open.spotify.com/embed/track/3qiyyUfYe7CRYLucrPmulD?utm_source=generator"
+                width="100%"
+                height="152"
+                frameborder="0"
+                allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"
+              ></iframe>
+            </div>
+          </div>
+        </div>
       </main>
 
       <footer>
@@ -112,7 +155,6 @@
       font-size: 80px;
       margin: 30px 0;
       letter-spacing: 2px;
-
       text-shadow: 2px 2px 5px #272727;
     }
 
@@ -148,7 +190,8 @@
       color: #d7d7d7;
     }
 
-    main h2 {
+    main h2,
+    main h3 {
       font-weight: 700;
       font-size: 20px;
       margin-bottom: 10px;
@@ -158,7 +201,8 @@
       color: #d7d7d7;
     }
 
-    .middle {
+    .middle,
+    .music {
       max-width: 960px;
       padding: 0px;
       margin: 80px auto;
@@ -191,11 +235,32 @@
     .source {
       text-align: right;
       display: block;
-      font-size: 14px;
+      font-size: 16px;
       margin-top: 20px;
       color: #151515;
     }
+
+    /* MUSIC */
+
+    .music {
+      border: solid 2px #424242;
+    }
+
+    .grid-3-columns {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    /*.music {
+      margin: 30px 0;
+    }
+
+    /*.music-body {
+      padding: 0px;
+    }
+
+
     /* FOOTER */
+
     footer {
       text-align: center;
       font-size: 12px;
