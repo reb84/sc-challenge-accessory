@@ -20,8 +20,8 @@
       </header>
 
       <main>
+        <a name="more"></a>
         <div class="middle">
-          <a name="more"></a>
           <section class="grid grid-2-columns">
             <div>
               <img
@@ -55,44 +55,46 @@
         </div>
 
         <div class="music">
-          <h3>Good music for headphones</h3>
+          <div class="music-internal">
+            <h3>Good music for headphones</h3>
 
-          <div class="grid grid-3-columns">
-            <div class="music-body">
-              <iframe
-                style="border-radius: 12px"
-                src="https://open.spotify.com/embed/track/2dLLR6qlu5UJ5gk0dKz0h3?utm_source=generator"
-                width="100%"
-                height="152"
-                frameborder="0"
-                allowfullscreen=""
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                loading="lazy"
-              ></iframe>
-            </div>
-            <div class="music-body">
-              <iframe
-                style="border-radius: 12px"
-                src="https://open.spotify.com/embed/track/5ChkMS8OtdzJeqyybCc9R5?utm_source=generator&theme=0"
-                width="100%"
-                height="152"
-                frameborder="0"
-                allowfullscreen=""
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                loading="lazy"
-              ></iframe>
-            </div>
-            <div class="music-body">
-              <iframe
-                style="border-radius: 12px"
-                src="https://open.spotify.com/embed/track/3qiyyUfYe7CRYLucrPmulD?utm_source=generator"
-                width="100%"
-                height="152"
-                frameborder="0"
-                allowfullscreen=""
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                loading="lazy"
-              ></iframe>
+            <div class="grid grid-3-columns">
+              <div class="music-body">
+                <iframe
+                  style="border-radius: 12px"
+                  src="https://open.spotify.com/embed/track/2dLLR6qlu5UJ5gk0dKz0h3?utm_source=generator"
+                  width="100%"
+                  height="152"
+                  frameborder="0"
+                  allowfullscreen=""
+                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                  loading="lazy"
+                ></iframe>
+              </div>
+              <div class="music-body">
+                <iframe
+                  style="border-radius: 12px"
+                  src="https://open.spotify.com/embed/track/5ChkMS8OtdzJeqyybCc9R5?utm_source=generator&theme=0"
+                  width="100%"
+                  height="152"
+                  frameborder="0"
+                  allowfullscreen=""
+                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                  loading="lazy"
+                ></iframe>
+              </div>
+              <div class="music-body">
+                <iframe
+                  style="border-radius: 12px"
+                  src="https://open.spotify.com/embed/track/3qiyyUfYe7CRYLucrPmulD?utm_source=generator"
+                  width="100%"
+                  height="152"
+                  frameborder="0"
+                  allowfullscreen=""
+                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                  loading="lazy"
+                ></iframe>
+              </div>
             </div>
           </div>
         </div>
@@ -182,6 +184,10 @@
 
     /* MAIN */
 
+    main {
+      padding: 20px 0;
+    }
+
     .middle p {
       font-style: normal;
       font-weight: 400;
@@ -190,10 +196,9 @@
       color: #d7d7d7;
     }
 
-    main h2,
-    main h3 {
+    main h2 {
       font-weight: 700;
-      font-size: 20px;
+      font-size: 24px;
       margin-bottom: 10px;
       letter-spacing: 5px;
       opacity: 0.3;
@@ -201,8 +206,7 @@
       color: #d7d7d7;
     }
 
-    .middle,
-    .music {
+    .middle {
       max-width: 960px;
       padding: 0px;
       margin: 80px auto;
@@ -243,21 +247,33 @@
     /* MUSIC */
 
     .music {
-      border: solid 2px #424242;
+      background-color: #333333;
+      width: 100%;
+      margin-top: 80px;
+    }
+    .music-internal {
+      width: 860px;
+      margin: 0 auto;
+      padding: 40px;
+    }
+
+    .music h3 {
+      font-weight: 700;
+      font-size: 24px;
+      margin-bottom: 20px;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      color: #d7d7d7;
+      text-align: center;
     }
 
     .grid-3-columns {
       grid-template-columns: 1fr 1fr 1fr;
     }
 
-    /*.music {
-      margin: 30px 0;
+    .music-body {
+      padding: 10px;
     }
-
-    /*.music-body {
-      padding: 0px;
-    }
-
 
     /* FOOTER */
 
@@ -268,7 +284,7 @@
       letter-spacing: 1px;
       margin: 0px auto;
       color: #d7d7d7;
-      border-top: solid 1px #474747;
+
       padding: 20px 0;
     }
 
@@ -288,7 +304,7 @@
 
       .grid {
         grid-template-columns: 1fr;
-        grid-gap: 32px;
+        grid-gap: 0px;
       }
 
       section {
@@ -300,6 +316,10 @@
       }
 
       .quote {
+        width: 80%;
+      }
+
+      .music-internal {
         width: 80%;
       }
     }
